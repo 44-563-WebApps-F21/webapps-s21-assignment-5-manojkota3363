@@ -7,18 +7,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a href="animals.html" class="navbar-brand">Interesting Animals</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </nav>
-    
+  <nav class="navbar navbar-expand-md  bg-light navbar-light ">
+    <div class="container">
+        <a href="animals.html" class="navbar-brand">Interesting Animals</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li><a class="dropdown-item" href="plane.html">Plane page</a></li>
+              <span></span>
+              <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">&nbsp;Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="Animal" class="form-label">&nbsp;Enter your animal</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input">
+    <label class="form-check-label">&nbsp;Sign up for newsletter? </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!--Bonus Code-->
+<div class ="container row">
+  <div class="card" style="width: 18rem;">
+    <img src="Magpie.jpg" class="card-img-top" alt="Magpie" width="100px" height="100px">
+    <div class="card-body">
+      <h5 class="card-title">Magpie</h5>
+      <p class="card-text">The Magpie  related to the jays but having a long graduated tail and black-and-white or brightly colored plumage.</p>
+      <a href="https://en.wikipedia.org/wiki/Lion" class="btn btn-primary"> Information</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="Aardvark.jpg" class="card-img-top" alt="Aardvark"  width="100px" height="100px" >
+  
+    <div class="card-body">
+      <h5 class="card-title">Aardvark</h5>
+      <p class="card-text">looks very much like a kangaroo. ... Aardvarks are mammals that look like they were made from parts of other animals.</p>
+      <a href="https://en.wikipedia.org/wiki/Leopard" class="btn btn-primary">Information</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="Newt.jpg" class="card-img-top" alt="Newt"  width="100px" height="100px">
+    <div class="card-body">
+      <h5 class="card-title">Newt</h5>
+      <p class="card-text">Smooth newts, or common newts, are olive green or pale brown with a bright orange, black spotted underside.</p>
+      <a href="https://en.wikipedia.org/wiki/Kangaroo" class="btn btn-primary">Information</a>
+    </div>
+  </div>
+  </div>
+
 
   <h1>Animals by Manoj Kota</h1>
   <div class="container">
@@ -76,7 +130,7 @@
       </div>
     </div>
 
-<p>Images with Thumbnails</p>
+    <p>Images with Thumbnails</p>
 
   </div>
   <!--Thumbnails-->
@@ -111,100 +165,103 @@
         </a>
       </div>
     </div>
-</div>
-
-<div class="container">
-  <h2>Tables in Boostrap</h2>
-  <caption>Styling Tables with Boostrap</caption>         
-  <table class="table table-striped table-bordered">
-    <thead>
-      <tr>
-        <th scope="col">S.No</th>
-        <th >Letter</th>
-        <th >Animal</th>
-        <th >City</th>
-        <th >Car</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>k</td>
-        <td>Keeshond</td>
-        <td>Kansas city</td>
-        <td>Kaiser-Darrin</td>
-
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>o</td>
-        <td>Ocelot</td>
-        <td>Ohio</td>
-        <td>Opel</td>
-
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>T</td>
-        <td>Tapir</td>
-        <td>Taft</td>
-        <td>Tesla</td>
-        
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>A</td>
-        <td>Aardvark</td>
-        <td>Albuquerque</td>
-        <td>Alba</td>
-        
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>M</td>
-        <td>Magpie</td>
-        <td>Mexico City</td>
-        <td>Mahindra</td>
-        
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>N</td>
-        <td>Newt</td>
-        <td>New York City</td>
-        <td>Nissan</td>
-        
-      </tr>
-    </tbody>
-  </table>
-  <!--buttons-->
-  <h2>Buttons for Letters</h2>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-dark">K</button>
-    <button type="button" class="btn btn-dark">O</button>
-    <button type="button" class="btn btn-dark">T</button>
-    <button type="button" class="btn btn-dark">A</button>
-    <button type="button" class="btn btn-dark">M</button>
-    <button type="button" class="btn btn-dark">N</button>
- </div>
-  
-    <div class="btn-group me-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-success">M</button>
-      <button type="button" class="btn btn-success">A</button>
-      <button type="button" class="btn btn-success">N</button>
-      
-    </div>
-    <div class="btn-group me-2" role="group" aria-label="Second group">
-      <button type="button" class="btn btn-warning">K</button>
-      <button type="button" class="btn btn-warning">O</button>
-      
-    </div>
-    <div class="btn-group" role="group" aria-label="Third group">
-      <button type="button" class="btn btn-danger">T</button>
-    </div>
-  
   </div>
+
+  <div class="container">
+    <h2>Tables in Boostrap</h2>
+    <caption>Styling Tables with Boostrap</caption>
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th>Letter</th>
+          <th>Animal</th>
+          <th>City</th>
+          <th>Car</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>k</td>
+          <td>Keeshond</td>
+          <td>Kansas city</td>
+          <td>Kaiser-Darrin</td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>o</td>
+          <td>Ocelot</td>
+          <td>Ohio</td>
+          <td>Opel</td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>T</td>
+          <td>Tapir</td>
+          <td>Taft</td>
+          <td>Tesla</td>
+
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>A</td>
+          <td>Aardvark</td>
+          <td>Albuquerque</td>
+          <td>Alba</td>
+
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>M</td>
+          <td>Magpie</td>
+          <td>Mexico City</td>
+          <td>Mahindra</td>
+
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>N</td>
+          <td>Newt</td>
+          <td>New York City</td>
+          <td>Nissan</td>
+
+        </tr>
+      </tbody>
+    </table>
+    <!--buttons-->
+    <h2>Buttons for Letters</h2>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-dark">K</button>
+        <button type="button" class="btn btn-dark">O</button>
+        <button type="button" class="btn btn-dark">T</button>
+        <button type="button" class="btn btn-dark">A</button>
+        <button type="button" class="btn btn-dark">M</button>
+        <button type="button" class="btn btn-dark">N</button>
+      </div>
+
+      <div class="btn-group me-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-success">M</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">N</button>
+
+      </div>
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-warning">K</button>
+        <button type="button" class="btn btn-warning">O</button>
+
+      </div>
+      <div class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-danger">T</button>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
